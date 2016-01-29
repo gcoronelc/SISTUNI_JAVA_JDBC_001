@@ -19,3 +19,15 @@
 - https://www.udemy.com/learning-git/
 - http://www.librosdigitales.net
 - http://gcoronelc.blogspot.pe/p/java.html
+
+# CLASE 01
+
+- Fecha: 29-ENE-2016
+- https://www.udemy.com/git-complete/
+- https://www.youtube.com/watch?v=4Kt4fpwSNtY
+- http://gcoronelc.blogspot.pe/2011/02/libros-de-oracle.html
+- http://gcoronelc.blogspot.pe/2014/11/oracle-sql-introduccion.html
+- http://gcoronelc.blogspot.pe/2012/03/instalacion-de-oracle-11g-r2.html
+- http://gcoronelc.blogspot.pe/2014/11/oracle-sql-consultas-basicas.html
+- http://gcoronelc.blogspot.pe/2014/11/creacion-del-esquema-eureka.html
+
