@@ -1,9 +1,13 @@
 # DESARROLLADOR DE APLICACIONES DE ESCRITORIO
 
 - Lugar: SistemasUNI
-- Horario: LU, MI y VI DE 8am a 1pm
+- Horario: LU, MI y VI DE 8 a 13 Horas
 - Inicio: 29-ENE-2016
 - Dirección: https://goo.gl/maps/98vwAt9NZMU2
+- Contenido: http://www.sistemasuni.edu.pe/dcursos/javaescritorio.html
+
+# DOCENTE
+
 - Docente: Eric Gustavo Coronel Castillo
 - Blog: www.desarrollasoftware.com
 - Correo: gcoronelc@gmail.com
