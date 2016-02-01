@@ -37,3 +37,7 @@
 - http://gcoronelc.blogspot.pe/2014/11/oracle-sql-consultas-basicas.html
 - http://gcoronelc.blogspot.pe/2014/11/creacion-del-esquema-eureka.html
 
+# CLASE 02
+
+- Fecha: 01-FEB-2016
+- Revisar el esquema de trabajo
