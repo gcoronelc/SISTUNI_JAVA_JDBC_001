@@ -41,3 +41,10 @@
 
 - Fecha: 01-FEB-2016
 - Revisar el esquema de trabajo
+- Conexión con Oracle utilizando JDBC
+- Arquitectura de la solucion
+- Formulario de logueo
+- CRUD - explicar funcionalida y crear interfaces.
+
+
+
