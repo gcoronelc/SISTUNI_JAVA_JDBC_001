@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pe.egcc;
+package pe.egcc.eurekaapp.domain;
 
 /**
  *
  * @author GustavoCoronel
  */
-public class eurekaappClasePrincipal {
-
-  /**
-   * @param args the command line arguments
-   */
-  public static void main(String[] args) {
-    // TODO code application logic here
-  }
+public class SucursalBean {
   
 }
