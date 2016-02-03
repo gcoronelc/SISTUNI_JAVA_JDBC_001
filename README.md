@@ -46,5 +46,11 @@
 - Formulario de logueo
 - CRUD - explicar funcionalida y crear interfaces.
 
+# CLASE 03
+
+- Fecha: 03-FEB-2016
+- Implementar logica de logueo
+- Programar el formulario de logueo
+
 
 
