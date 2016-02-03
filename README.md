@@ -59,9 +59,23 @@
 - Implementar logica de logueo
 - Programar el formulario de logueo
 - Menu de la Solución
-- Transacciones: Depósito
+- Transacciones: Proceso Depósito
 - https://www.swapbytes.com/niveles-aislamiento-base-de-datos/
 - http://www-01.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzaha/transiso.htm?lang=es
 - https://technet.microsoft.com/es-es/library/ms189122(v=sql.105).aspx
+
+# CLASE 04
+
+- Fecha: 05-FEB-2016
+- Implementación de un CRUD
+
+
+
+# CLASE 05
+
+- Fecha: 08-FEB-2016
+- Reportes
+- Presentación de proyectos
+
 
 
