@@ -4,7 +4,7 @@ import pe.egcc.eurekaapp.domain.SucursalBean;
 
 /**
  *
- * @author GustavoCoronel
+ * @author Gustavo Coronel
  */
 public interface SucursalDaoCrud extends AbstractCrud<SucursalBean>{
   

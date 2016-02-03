@@ -1,0 +1,10 @@
+Framework JDBC
+- Spring JDBC
+- MyBatis
+
+Framework ORM
+- Hibernate
+- TopLink
+- Open JPA
+- EclipseLink
+- Etc.

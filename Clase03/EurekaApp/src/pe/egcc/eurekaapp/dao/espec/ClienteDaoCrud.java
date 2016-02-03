@@ -4,7 +4,7 @@ import pe.egcc.eurekaapp.domain.ClienteBean;
 
 /**
  *
- * @author GustavoCoronel
+ * @author Gustavo Coronel
  */
 public interface ClienteDaoCrud extends AbstractCrud<ClienteBean>{
   

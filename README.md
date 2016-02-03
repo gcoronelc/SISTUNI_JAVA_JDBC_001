@@ -25,6 +25,11 @@
 - https://www.udemy.com/learning-git/
 - http://www.librosdigitales.net
 - http://gcoronelc.blogspot.pe/p/java.html
+- http://www.peoug.org/oracleotn2012/
+- http://www.peoug.org/otntour2013/
+- http://www.peoug.org/oracleotn2014/
+- http://www.peoug.org/oracleotn2015/
+
 
 # CLASE 01
 
@@ -51,6 +56,10 @@
 - Fecha: 03-FEB-2016
 - Implementar logica de logueo
 - Programar el formulario de logueo
-
+- Menu de la Solución
+- Transacciones: Depósito
+- https://www.swapbytes.com/niveles-aislamiento-base-de-datos/
+- http://www-01.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzaha/transiso.htm?lang=es
+- https://technet.microsoft.com/es-es/library/ms189122(v=sql.105).aspx
 
 
