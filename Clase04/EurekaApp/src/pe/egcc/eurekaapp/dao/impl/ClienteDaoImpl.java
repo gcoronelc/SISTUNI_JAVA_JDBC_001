@@ -63,6 +63,12 @@ public class ClienteDaoImpl
     return bean;
   }
 
+  /**
+   * Consulta empleados por: Codigo, paterno, materno o nombre.
+   * 
+   * @param bean
+   * @return 
+   */
   @Override
   public List<ClienteBean> taerLista(ClienteBean bean) {
 
