@@ -83,12 +83,12 @@ public class ClienteDaoImpl
               + "vch_cliedireccion, vch_clietelefono, "
               + "vch_clieemail "
               + "from cliente "
-              + "where (chr_cliecodigo = ?) "
+              + "where (chr_cliecodigo like ? ) "
               + "and (vch_cliepaterno like ? "
               + "and vch_cliematerno like ? "
               + "and vch_clienombre like ?) ";
       PreparedStatement pstm = cn.prepareStatement(sql);
-      pstm.setString(1, EurekaUtil.aString(bean.getCodigo()));
+      pstm.setString(1, EurekaUtil.aString(bean.getCodigo()) + "%");
       pstm.setString(2, EurekaUtil.aString(bean.getPaterno()) + "%");
       pstm.setString(3, EurekaUtil.aString(bean.getMaterno()) + "%");
       pstm.setString(4, EurekaUtil.aString(bean.getNombre()) + "%");

@@ -24,6 +24,7 @@
 - http://gcoronelc.blogspot.pe/2011/02/libros-de-oracle.html
 - http://gcoronelc.blogspot.pe/p/java.html
 - https://github.com/gcoronelc/PECI-Java-MAR-2015
+- https://github.com/gcoronelc/CEPSUNI_JAVA_CS_001
 - https://www.udemy.com/learning-git/
 - http://www.librosdigitales.net
 - http://gcoronelc.blogspot.pe/p/java.html

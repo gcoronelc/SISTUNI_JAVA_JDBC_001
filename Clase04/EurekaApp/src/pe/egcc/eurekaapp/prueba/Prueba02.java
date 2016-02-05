@@ -16,7 +16,7 @@ public class Prueba02 {
     ClienteBean bean = new ClienteBean();
     bean.setPaterno("R");
     // bean.setMaterno("O");
-    bean.setCodigo("00004");
+    //bean.setCodigo("00004");
     
     ClienteDaoCrud clienteDao = new ClienteDaoImpl();
     List<ClienteBean> lista;

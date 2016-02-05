@@ -40,7 +40,10 @@ public class FormularioMDI extends javax.swing.JFrame {
     menuProcesosRetiro = new javax.swing.JMenuItem();
     menuProcesosTransferencia = new javax.swing.JMenuItem();
     menuProcesosCerrarCuenta = new javax.swing.JMenuItem();
-    menuTblas = new javax.swing.JMenu();
+    menuTablas = new javax.swing.JMenu();
+    menuTablasCliente = new javax.swing.JMenuItem();
+    menuTablasEmpleado = new javax.swing.JMenuItem();
+    menuTablasSucursal = new javax.swing.JMenuItem();
     menuConsultas = new javax.swing.JMenu();
     menuReportes = new javax.swing.JMenu();
     menuUtil = new javax.swing.JMenu();
@@ -86,8 +89,23 @@ public class FormularioMDI extends javax.swing.JFrame {
 
     menuBar.add(menuProcesos);
 
-    menuTblas.setText("Tablas");
-    menuBar.add(menuTblas);
+    menuTablas.setText("Tablas");
+
+    menuTablasCliente.setText("Clientes");
+    menuTablasCliente.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        menuTablasClienteActionPerformed(evt);
+      }
+    });
+    menuTablas.add(menuTablasCliente);
+
+    menuTablasEmpleado.setText("Empleados");
+    menuTablas.add(menuTablasEmpleado);
+
+    menuTablasSucursal.setText("Sucursales");
+    menuTablas.add(menuTablasSucursal);
+
+    menuBar.add(menuTablas);
 
     menuConsultas.setText("Consultas");
     menuBar.add(menuConsultas);
@@ -121,6 +139,10 @@ public class FormularioMDI extends javax.swing.JFrame {
   private void menuProcesosDepositoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuProcesosDepositoActionPerformed
     cargarFormulario(DepositoView.class);
   }//GEN-LAST:event_menuProcesosDepositoActionPerformed
+
+  private void menuTablasClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuTablasClienteActionPerformed
+    cargarFormulario(MantClientesView.class);
+  }//GEN-LAST:event_menuTablasClienteActionPerformed
 
   /**
    * @param args the command line arguments
@@ -170,7 +192,10 @@ public class FormularioMDI extends javax.swing.JFrame {
   private javax.swing.JMenuItem menuProcesosRetiro;
   private javax.swing.JMenuItem menuProcesosTransferencia;
   private javax.swing.JMenu menuReportes;
-  private javax.swing.JMenu menuTblas;
+  private javax.swing.JMenu menuTablas;
+  private javax.swing.JMenuItem menuTablasCliente;
+  private javax.swing.JMenuItem menuTablasEmpleado;
+  private javax.swing.JMenuItem menuTablasSucursal;
   private javax.swing.JMenu menuUtil;
   // End of variables declaration//GEN-END:variables
 
