@@ -1,5 +1,7 @@
 package pe.egcc.eurekaapp.service;
 
+import java.util.List;
+import java.util.Map;
 import pe.egcc.eurekaapp.dao.espec.CuentaDaoEspec;
 import pe.egcc.eurekaapp.dao.impl.CuentaDaoImpl;
 
@@ -25,4 +27,10 @@ public class CuentaService {
     cuentaDao.registrarDeposito(cuenta, importe, codEmp);
   }
   
+  
+  public List<Map<String, ?>> obtenerMovimientos(String cuenta) {
+    CuentaDaoEspec cuentaDao;
+    cuentaDao = new CuentaDaoImpl();
+    return cuentaDao.obtenerMovimientos(cuenta);
+  }
 }
