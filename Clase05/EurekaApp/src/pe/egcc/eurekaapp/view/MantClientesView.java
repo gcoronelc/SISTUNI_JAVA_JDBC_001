@@ -1,8 +1,15 @@
 package pe.egcc.eurekaapp.view;
 
+import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import net.sf.jasperreports.view.JasperViewer;
 import pe.egcc.eurekaapp.controller.ClienteController;
 import pe.egcc.eurekaapp.domain.ClienteBean;
 import pe.egcc.eurekaapp.util.EurekaUtil;
@@ -93,6 +100,11 @@ public class MantClientesView extends javax.swing.JInternalFrame {
     btnExcel.setText("Excel");
 
     btnPdf.setText("PDF");
+    btnPdf.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnPdfActionPerformed(evt);
+      }
+    });
 
     tblDatos.setModel(new javax.swing.table.DefaultTableModel(
       new Object [][] {
@@ -216,7 +228,7 @@ public class MantClientesView extends javax.swing.JInternalFrame {
     view.setAccion(EurekaUtil.CRUD_NUEVO);
     Memoria.put("bean", null);
     view.setVisible(true);
-    if(Memoria.get("bean") == null){
+    if (Memoria.get("bean") == null) {
       return;
     }
     bean = (ClienteBean) Memoria.get("bean");
@@ -226,7 +238,7 @@ public class MantClientesView extends javax.swing.JInternalFrame {
 
   private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
     int row = tblDatos.getSelectedRow();
-    if(row < 0){
+    if (row < 0) {
       return;
     }
     ClienteBean bean = lista.get(row);
@@ -238,7 +250,7 @@ public class MantClientesView extends javax.swing.JInternalFrame {
 
   private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
     int row = tblDatos.getSelectedRow();
-    if(row < 0){
+    if (row < 0) {
       return;
     }
     ClienteBean bean = lista.get(row);
@@ -247,6 +259,32 @@ public class MantClientesView extends javax.swing.JInternalFrame {
     view.setAccion(EurekaUtil.CRUD_ELIMINAR);
     view.setVisible(true);
   }//GEN-LAST:event_btnEliminarActionPerformed
+
+  private void btnPdfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPdfActionPerformed
+
+    if (lista == null || lista.isEmpty()) {
+      return;
+    }
+
+    try {
+      // Preparar datos
+      JRBeanCollectionDataSource data;
+      data = new JRBeanCollectionDataSource(lista);
+      // Parámetros
+      Map<String, Object> parms = new HashMap();
+      // Cargar el reporte
+      String reportFile = "/pe/egcc/eurekaapp/reports/repoClientes.jasper";
+      InputStream reportStream = Class.class.getResourceAsStream(reportFile);
+      // Construir el JasperPrint
+      JasperPrint reportPrint;
+      reportPrint = JasperFillManager.fillReport(reportStream, parms, data);
+      // Mostrando el reporte
+      JasperViewer viewer = new JasperViewer(reportPrint, false);
+      viewer.setTitle("LISTADO DE CLIENTES");
+      viewer.setVisible(true);
+    } catch (JRException jRException) {
+    }
+  }//GEN-LAST:event_btnPdfActionPerformed
 
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
